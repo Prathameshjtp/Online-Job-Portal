@@ -1,0 +1,32 @@
+{% load static %}
+
+{% block body %}
+
+{% include 'navigation.html' %}
+
+<marquee style="font-family: 'Monotype Corsiva' ; font-size : 25px; color : darkcyan ; background-color : black ; font-weight : bold ; margin-top:0.5%">
+     User Login
+</marquee>
+<hr>
+<form class="Container mt-5" method="post">
+     {% csrf_token %}
+     <label><b>Email ID</b></label>
+     <input type="email" class="form-control" name="uname" placeholder="Enter Email ID">
+
+     <label><b>Password</b></label>
+     <input type="password" class="form-control" name="pwd" placeholder="Enter Password">
+
+     <input type="Submit" value="Login" class="btn btn-primary" style="margin-top:1% ; color : darkcyan ; background-color: black">
+<a href="{% url 'user_signup' %}" class="btn btn-primary" style="margin-top:1% ; color : darkcyan ; background-color: black">Sign Up</a>
+</form>
+
+    {% if error == "no" %}
+     <script>
+    alert("Login Successful");
+    window.location = ('{% url 'user_home' %}');
+     </script>
+    {% endif %}
+
+{% include 'footer.html' %}
+
+{% endblock %}

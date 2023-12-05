@@ -1,0 +1,31 @@
+{% load static %}
+
+<div class="mt-3" style="background-color: black ; width:100%; height:250px">
+   <div class="container">
+      <div class="row">
+        <div class="col-md-4 mt-2">
+            <h3 class="text-white">Contact Information</h3>
+            <p style="color:yellow ; font-size : 18px"><i class="fa fa-map-marker text-danger"></i> Indrapuri C Sector Bhopal</p>
+             <p style="color:yellow ; font-size : 18px"><i class="fa fa-envelope text-danger"></i> prathmshjtp017@gmail.com</p>
+             <p style="color:yellow ; font-size : 18px"><i class="fa fa-mobile text-danger"></i> P: +91 7972663382</p>
+             <p style="color:yellow ; font-size : 18px"><i class="fa fa-globe text-danger"></i> W: www.hire2jobs.com</p>
+        </div>
+
+        <div class="col-md-4 mt-2">
+            <h3 class="text-white"> Online Placement</h3>
+            <p style="color:yellow ; font-size : 18px"> An employment website is a website that deals specially with employment or careers.Many employment websites are designed to allow employers to post job requirements for a position to be filled and commonly knowns as job boards</p>
+
+        </div>
+
+        <div class="col-md-4 mt-2">
+            <h3 class="text-white"> News Letter </h3>
+            <p style="color:yellow ; font-size : 18px"> If you want any extra information then send me your Email ID</p>
+            <form method="post" class="form-inline">
+                {% csrf_token %}
+                <input type="email" name="emailid" placeholder="Email ID" required class="form-control mr-2">
+                <input type="Submit" value="Send" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,47 @@
+{% load static %}
+
+{% block body %}
+
+{% include 'navigation.html' %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.css">
+
+    <style>
+        .mydiv:hover{
+            box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+            transform:translateY(-20px)
+        }
+    </style>
+
+<marquee style="font-family: 'Monotype Corsiva' ; font-size : 25px; color : darkcyan ; background-color : black ; font-weight : bold ; margin-top:0.5%">
+     Contact Us
+</marquee>
+<hr>
+
+<div class="container mt-5" >
+<br><br>
+<div class="row mt-5" >
+    <div class="col-sm-3 mydiv" >
+         <h4 class="text-center"><i class="fas fa-phone-square"></i>Contact</h4>
+        <p class="text-center">+91 7972663382</p>
+    </div>
+
+    <div class="col-sm-3 mydiv" >
+         <h4 class="text-center"><i class="fas fa-envelop"></i>Email Id"</h4>
+        <p class="text-center">prathmshjtp017@gmail.com</p>
+    </div>
+
+    <div class="col-sm-3 mydiv" >
+         <h4 class="text-center"><i class="fas fa-address-card"></i>Address</h4>
+        <p class="text-center">Indrapuri C Sector Bhopal</p>
+    </div>
+
+    <div class="col-sm-3 mydiv" >
+         <h4 class="text-center"><i class="far fa-clock"></i>Office Timing</h4>
+        <p class="text-center">10:00 A.M. to 7:00 P.M.</p>
+    </div>
+
+</div>
+
+</div>
+
+{% endblock %}

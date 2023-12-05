@@ -1,0 +1,93 @@
+{% load static %}
+
+{% block body %}
+
+{% include 'navigation.html' %}
+
+    <style>
+    .container{
+        max-width : 90%
+    }
+
+    .content{
+        text-align : center;
+        position:absolute;
+        bottom:0;
+        background:rgba(0,0,0,0.5);
+        color : white;
+        height:30px ;
+        width:90%
+    }
+    </style>
+
+ <div class="container-fliud" style="margin-top:1%">
+        <img src="{% static 'images/job3.jpg' %}" style="height:450px; width:100%">
+ </div>
+
+    <div class="container" style="background-color : black ;height:500px; margin-top:3%" >
+<h1 class="text-center text-white">----------| OUR PLACED STUDENTS |----------</h1>
+    <div class="row mt-3">
+         <div class="col-md-3">
+              <img src="{% static 'images/f9.jpg' %}" style="width:100% ; margin-top:5% ; height : 170px ; border-radius:50%">
+              <div class="content">
+              <p>Facebook</p>
+              </div>
+         </div>
+
+        <div class="col-md-3">
+              <img src="{% static 'images/f1.jpg' %}" style="width:100% ; margin-top:5% ; height : 170px ; border-radius:50%">
+              <div class="content">
+              <p>Wipro</p>
+              </div>
+         </div>
+
+        <div class="col-md-3">
+              <img src="{% static 'images/f2.jpg' %}" style="width:100% ; margin-top:5% ; height : 170px ; border-radius:50%">
+              <div class="content">
+              <p>Cisco</p>
+              </div>
+         </div>
+        <div class="col-md-3">
+              <img src="{% static 'images/f8.jpg' %}" style="width:100% ; margin-top:5% ; height : 170px ; border-radius:50%">
+              <div class="content">
+              <p>Linkedin</p>
+              </div>
+         </div>
+
+    </div>
+
+    <div class="row mt-3">
+         <div class="col-md-3">
+              <img src="{% static 'images/f4.jpg' %}" style=" width:100% ; margin-top:5% ; height : 170px ; border-radius:50%">
+              <div class="content">
+              <p>Apple</p>
+              </div>
+         </div>
+
+        <div class="col-md-3">
+              <img src="{% static 'images/f5.jpg' %}" style="width:100% ; margin-top:5% ; height : 170px ; border-radius:50%">
+              <div class="content">
+              <p>IBM</p>
+              </div>
+         </div>
+
+        <div class="col-md-3">
+              <img src="{% static 'images/f6.jpg' %}" style="width:100% ; margin-top:5% ; height : 170px ; border-radius:50%">
+              <div class="content">
+              <p>Google</p>
+              </div>
+         </div>
+        <div class="col-md-3">
+              <img src="{% static 'images/f7.jpg' %}" style="width:100% ; margin-top:5% ; height : 170px ; border-radius:50%">
+              <div class="content">
+              <p>Microsoft</p>
+              </div>
+         </div>
+
+    </div>
+
+</div>
+
+    {% include 'footer.html' %}
+
+{% endblock %}
